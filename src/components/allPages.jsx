@@ -5,6 +5,7 @@ import LoginSignup from "./Login/signup";
 import { useEffect, useState } from "react";
 import Footer from "./footer";
 import Newsletter from "./newsletter";
+import Mainvideos from "./mainvideos";
 
 function Allpages() {
   const [isFirstMount, setIsFirstMount] = useState(true);
@@ -24,6 +25,7 @@ function Allpages() {
         <Route path="/" element={<MainPage isFirstMount={isFirstMount} />} />
         <Route path="/Login" element={<LoginSignup setIsAuth={setIsAuth} />} />
         <Route path="/Newsletter" element={<Newsletter />} />
+        <Route path="/Artprocess" element={<Mainvideos />} />
       </Routes>
       <Footer />
     </div>

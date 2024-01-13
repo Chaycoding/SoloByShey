@@ -7,7 +7,7 @@ function Header() {
   const scrollPosition = useScrollPosition();
   const position = scrollPosition > 0 ? "sticky bg-slate-800" : "relative";
   const position2 = scrollPosition > 0 ? "" : "text-black";
-  const positiontext = scrollPosition > 0 ? " " : "hidden";
+  const positiontext = scrollPosition > 0 ? " " : "invisible";
   const positionspin = scrollPosition > 0 ? "border-2 border-white" : "";
   const attachment = `flex w-full top-0 text-white transition-all  duration-200 z-10 h-20 px-10 ${position}`;
   const attachment2 = `text-4xl font-sans font-bold sm:ml-3 ml-11 mt-3 pb-1 transition-all ${position2}`;
@@ -27,7 +27,9 @@ function Header() {
           </Link>
         </div>
         <div className={attachmenttext}>
-          <button>Videos</button>
+          <button>
+            <Link to="Artprocess">Videos</Link>
+          </button>
           <button className="w-20">About us</button>
         </div>
         <div className=" sm:flex hidden ml-[35rem] text-md ">
