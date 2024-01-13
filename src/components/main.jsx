@@ -33,13 +33,19 @@ function MainPage({ isFirstMount }) {
   }, []);
 
   return (
-    <div className="h-screen">
-      <div className="columns-4 gap-8 mx-10">
+    <div className="h-screen ">
+      <div className="sm:columns-4 columns-2 gap-8 mx-10">
         {content.map((x, i) => {
           return <MandalaImages key={i} image={x} />;
         })}
       </div>
-      {isFirstMount ? <EntranceAni /> : <PageSwitchAni />}
+      {window.innerWidth > 640 ? (
+        isFirstMount ? (
+          <EntranceAni />
+        ) : (
+          <PageSwitchAni />
+        )
+      ) : null}
     </div>
   );
 }

@@ -18,7 +18,7 @@ function MandalaImages({ image }) {
           setloading(true);
         }}
         className=" rounded-2xl z-50 w-full hover:cursor-pointer
-         mb-6 hover:scale-125 transition-all"
+         mb-6 sm:hover:scale-125 transition-all"
         loading="lazy"
       ></img>
     </div>
