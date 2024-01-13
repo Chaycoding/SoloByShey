@@ -1,28 +1,12 @@
 import PageSwitchAni from "../transitionAnimation/pageAni";
-import { auth, provider } from "../firebase/config";
-import { signInWithPopup } from "firebase/auth";
 import React from "react";
 
-import { useNavigate } from "react-router-dom";
-
-function LoginSignup({ setIsAuth }) {
-  const navigate = useNavigate();
-
-  const signUp = () => {
-    signInWithPopup(auth, provider).then(() => {
-      localStorage.setItem("isAuth", true);
-      setIsAuth(true);
-      navigate("/");
-    });
-  };
-
+function LoginSignup() {
   return (
-    <div className="h-[20rem] flex items-center justify-center">
+    <div className="h-[20rem] flex justify-center text-5xl">
       <PageSwitchAni />
 
-      <button className="text-2xl" onClick={signUp}>
-        Sign in with google
-      </button>
+      <h1>Contact us!</h1>
     </div>
   );
 }

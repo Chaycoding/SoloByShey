@@ -6,4 +6,39 @@
   body {
     margin: 0;
   }
+
+  .fade-in-image {
+    animation: forwards fadeIn 2s, forwards rotateani 1s;
+    animation-delay: 1.5s, 0s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      margin-top: 0rem;
+    }
+
+    60% {
+      margin-top: 10rem;
+    }
+    65% {
+      margin-top: 30rem;
+    }
+    70% {
+      margin-top: 40rem;
+      opacity: 0;
+      display: none;
+    }
+  }
+
+  @keyframes rotateani {
+    0% {
+      rotate: 0deg;
+    }
+    100% {
+      rotate: 360deg;
+    }
+  }
+
+
+  
 }

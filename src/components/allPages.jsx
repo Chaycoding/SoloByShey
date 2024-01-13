@@ -4,6 +4,7 @@ import MainPage from "./main";
 import LoginSignup from "./Login/signup";
 import { useEffect, useState } from "react";
 import Footer from "./footer";
+import Newsletter from "./newsletter";
 
 function Allpages() {
   const [isFirstMount, setIsFirstMount] = useState(true);
@@ -22,6 +23,7 @@ function Allpages() {
       <Routes location={location} key={location.key}>
         <Route path="/" element={<MainPage isFirstMount={isFirstMount} />} />
         <Route path="/Login" element={<LoginSignup setIsAuth={setIsAuth} />} />
+        <Route path="/Newsletter" element={<Newsletter />} />
       </Routes>
       <Footer />
     </div>

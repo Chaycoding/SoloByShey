@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import image from "../images/mainlogo.jpg";
 
 function EntranceAni() {
   const [displayitem, setdisplayitem] = useState("visible");
@@ -47,11 +48,11 @@ function EntranceAni() {
   }, 3000);
 
   let displaything = `absolute inset-0 flex items-end ${displayitem}`;
-  console.log(displaything);
+
   return (
     <div className={displaything}>
       <motion.div
-        className="absolute z-40 flex items-center justify-center w-full bg-black"
+        className="absolute z-40 flex items-center justify-center w-full bg-[#2F2F31]"
         initial="initial"
         animate="animate"
         variants={blackBox}
@@ -60,9 +61,14 @@ function EntranceAni() {
           document.body.classList.remove("overflow-hidden")
         }
       >
+        <img
+          src={image}
+          alt=""
+          className="h-72 w-72 object-cover fade-in-image pb-6 "
+        />
         <motion.svg
           variants={textContainer}
-          className="absolute z-40 flex left-[38%] top-[38%] "
+          className="absolute z-40 flex left-[38%] top-[68%] "
         >
           <pattern
             id="pattern"
@@ -84,7 +90,7 @@ function EntranceAni() {
             y="50%"
             style={{ fill: "url(#pattern)" }}
           >
-            SoloByShey
+            SolobyShey
           </text>
         </motion.svg>
       </motion.div>

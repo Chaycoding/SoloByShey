@@ -20,6 +20,12 @@ function MandalaImages({ image }) {
         className=" rounded-2xl z-50 w-full hover:cursor-pointer
          mb-6 sm:hover:scale-125 transition-all"
         loading="lazy"
+        onContextMenu={(e) => {
+          e.preventDefault();
+        }}
+        onDragStart={(e) => {
+          e.preventDefault();
+        }}
       ></img>
     </div>
   );
