@@ -9,9 +9,9 @@ function Header() {
   const position2 = scrollPosition > 0 ? "" : "text-black";
   const positiontext = scrollPosition > 0 ? " " : "invisible";
   const positionspin = scrollPosition > 0 ? "border-2 border-white" : "";
-  const attachment = `flex w-full top-0 text-white transition-all  duration-200 z-10 h-20 px-10 ${position}`;
+  const attachment = `flex veryunique w-full top-0 text-white transition-all  duration-200 z-10 h-20 px-10 ${position}`;
   const attachment2 = `text-4xl font-sans font-bold sm:ml-3 ml-11 mt-3 pb-1 transition-all ${position2}`;
-  const attachmenttext = `grid grid-cols-3 font-bold text-white duration-700 sm:ml-12 sm:w-40 sm:gap-28 transition-all ${positiontext}`;
+  const attachmenttext = `grid grid-cols-3 font-bold pt-5 text-white duration-700 sm:ml-12 sm:w-40 text-lg sm:gap-28 transition-all ${positiontext}`;
   const attachmentspin = `h-8 w-8 ml-4 animate-spin-slow rounded-full transition-all ${positionspin}`;
 
   return (
@@ -27,10 +27,12 @@ function Header() {
           </Link>
         </div>
         <div className={attachmenttext}>
-          <button>
-            <Link to="Artprocess">Videos</Link>
+          <button className="w-max px-2 duration-200 py-1 transition-all rounded-lg hover:border-black border-transparent border-2 hover:bg-white hover:text-black text-white font-bold h-max">
+            About us
           </button>
-          <button className="w-20">About us</button>
+          <button className="rounded-lg px-2 py-1 transition-all duration-200 hover:border-black w-max border-transparent border-2 hover:bg-white hover:text-black text-white font-bold h-max">
+            <Link to="/Artprocess">Videos</Link>
+          </button>
         </div>
         <div className=" sm:flex hidden ml-[35rem] text-md ">
           <div className="flex items-center">

@@ -4,11 +4,12 @@
 
 @layer base {
   body {
+    background-image: #fdf7e4;
     margin: 0;
+    overflow:scroll;
   }
-
   .fade-in-image {
-    animation: forwards fadeIn 2s, forwards rotateani 1s;
+    animation: forwards fadeIn 2s, forwards rotateani 1.5s;
     animation-delay: 1.5s, 0s;
   }
 
@@ -22,10 +23,10 @@
     }
     65% {
       margin-top: 30rem;
+      opacity: 0;
     }
     70% {
       margin-top: 40rem;
-      opacity: 0;
       display: none;
     }
   }
@@ -35,10 +36,7 @@
       rotate: 0deg;
     }
     100% {
-      rotate: 360deg;
+      rotate: 720deg;
     }
   }
-
-
-  
 }

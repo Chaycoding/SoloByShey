@@ -6,6 +6,9 @@ export default {
       animation: {
         "spin-slow": "spin 2s linear infinite",
       },
+      backgroundImage: {
+        newsletter: `url(/src/components/images/newsletter.webp)`,
+      },
     },
   },
   plugins: [],

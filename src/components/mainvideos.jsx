@@ -46,7 +46,7 @@ function Mainvideos() {
         {content.map((x, i) => {
           return (
             <video
-              className="rounded-2xl"
+              className="rounded-2xl mt-5"
               width="750"
               height="500"
               controls

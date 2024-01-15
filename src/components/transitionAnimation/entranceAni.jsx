@@ -64,11 +64,11 @@ function EntranceAni() {
         <img
           src={image}
           alt=""
-          className="h-72 w-72 object-cover fade-in-image pb-6 "
+          className="h-96 w-96 object-cover fade-in-image -ml-6 pb-6 "
         />
         <motion.svg
           variants={textContainer}
-          className="absolute z-40 flex left-[38%] top-[68%] "
+          className="absolute z-40 flex left-[38%] top-[78%] "
         >
           <pattern
             id="pattern"
