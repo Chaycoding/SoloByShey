@@ -18,7 +18,7 @@ function MandalaImages({ image }) {
         <div
           className="left-0  w-full h-screen z-10 bg-opacity-40 transition-all bg-black absolute justify-center flex items-center"
           onClick={() => {
-            document.body.style.overflow = "visible";
+            document.body.style.overflow = "auto";
             setImagestat(false);
           }}
           style={imagestyle}
