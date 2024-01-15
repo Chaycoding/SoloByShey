@@ -11,6 +11,5 @@ export default defineConfig({
       include: ["./src/**/*.jsx", "./src/**/*.js"],
     }),
   ],
-
   base: "/SoloByShey/",
 });
