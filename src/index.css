@@ -6,7 +6,6 @@
   body {
     background-image: #fdf7e4;
     margin: 0;
-    overflow:scroll;
   }
   .fade-in-image {
     animation: forwards fadeIn 2s, forwards rotateani 1.5s;
